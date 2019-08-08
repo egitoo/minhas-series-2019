@@ -1,17 +1,29 @@
+/* CSS RESET */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* Cabeçalho */
 .header{
   background-color: #c0392b;
+  background-image: linear-gradient(#C0392B, #E74C3C);
 }
 .header--title{
   color: white;
   text-shadow: 0.5px 0.5px 1px black;
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
+  padding: 30px;
+  text-align: center;
 }
   .header--title-bgwhite{
     background-color: white;
     color: #c0392b;
     font-family: 'Open Sans', sans-serif;
+    padding: 6px;
+    border-radius: 6px;
   }
 
 /* Capa da série página principal */
@@ -21,16 +33,20 @@
   .serie--title{
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
+    padding: 20px 0 2.5px;
   }
   .serie--genre{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color:#A9A4A4;
+    color: #A9A4A4;
     display:block;
+    padding: 2.5px 0 20px;
   }
   .serie--image{
     display:block;
     max-width: 328px;
+    margin: 0 auto;
+    border-radius: 5px;
   }
   .serie--readmore{
     font-family: 'Roboto', sans-serif;
@@ -38,6 +54,10 @@
     background-color: #c0392b;
     text-decoration: none;
     display:block;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 328px;
+    border-radius: 5px;
   }
     .serie--readmore:hover{
       background-color: #E74C3C;
@@ -49,8 +69,84 @@
   color: #C0392B;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
+
+}
+.footer--element{
+  padding: 20px;
 }
   .footer--image{
     width: 25px;
     height: 25px;
+    margin-top: 10px;
+    margin-right: 3px;
   }
+
+  /* Detalhes da série */
+.seriedetail{
+  text-align: center;
+}
+  .seriedetail--title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    padding: 20px 0 2.5px;
+  }
+  .seriedetail--genre{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #A9A4A4;
+    display:block;
+    padding: 2.5px 0 20px;
+  }
+  .seriedetail--image{
+    display:block;
+    max-width: 328px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  .seriedetail--watchtrailer{
+    font-family: 'Roboto', sans-serif;
+    color:#000000;
+    background-color: #F1C40F;
+    text-decoration: none;
+    display:block;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 328px;
+    border-radius: 5px;
+  }
+    .seriedetail--watchtrailer:hover{
+      background-color: rgba(241, 196, 15, 0.767);
+    }
+    .seriedetail--text{
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.5;
+      max-width: 328px;
+      margin: 10px auto;
+      text-align: left;
+    }
+
+    /* Serie avaliation */
+    .serieavaliation{
+      background-color: #EEEEEE;
+      margin: 10px auto;
+    }
+    .serieavaliation--title{
+      text-align: center;
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      padding: 30px 0 10px;
+    }
+    .serieavaliation--images{
+      text-align: center;
+
+    }
+    .serieavaliation--twitter{
+      margin: 0 50px;
+    }
+    .serieavaliation--percent{
+      text-align: center;
+      color:green;
+      padding: 10px;
+      font-size: 37px;
+    }
