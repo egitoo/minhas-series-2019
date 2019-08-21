@@ -4,6 +4,7 @@
 
   <meta charset="UTF-8">
   <title>Minhas Séries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="assets/css/estilo.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet"> 
 
@@ -12,27 +13,36 @@
 <body>
 
   <header class="header">
-    <div class="header--title">Minhas <span class="header--title-bgwhite">Séries</span></div>
+    <div class="header__title container">Minhas <span class="header__title-bgwhite">Séries</span></div>
+    <nav>
+      <ul class="menu container">
+        <li class="menu__item"><a href="#">Início</a></li>
+        <li class="menu__item"><a href="#">Séries renovadas</a></li>
+        <li class="menu__item"><a href="#">Séries em destaque</a></li>
+        <li class="menu__item"><a href="#">Novas séries</a></li>
+        <li class="menu__item"><a href="#">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
 <section class="serie">
-  <h1 class="serie--title">Game of Thrones</h1>
-  <span class="serie--genre">Fantasia</span>
-  <img class="serie--image" src="assets/images/capas/game-of-thrones.jpg" alt="Capa da série Game of Thrones com Rei da noite">
-  <a href="#" class="serie--readmore">Leia mais</a>
+  <h1 class="serie__title">Game of Thrones</h1>
+  <span class="serie__genre">Fantasia</span>
+  <img class="serie__image" src="assets/images/capas/game-of-thrones.jpg" alt="Capa da série Game of Thrones com Rei da noite">
+  <a href="#" class="serie__readmore">Leia mais</a>
 </section>
   </main>
 
   <footer class="footer">
-    <div class="footer--element">Receba as novidades:</div>
+    <div class="footer__element container">Receba as novidades:</div>
 
-    <div class="footer--element">
+    <div class="footer__element">
     <div>Siga-nos em nossas redes sociais:</div>
     <div>
-      <img src="assets/images/facebook.svg" alt="" class="footer--image">
-      <img src="assets/images/twitter.svg" alt="" class="footer--image">
-      <img src="assets/images/youtube.svg" alt="" class="footer--image">
+      <img src="assets/images/facebook.svg" alt="" class="footer__image">
+      <img src="assets/images/twitter.svg" alt="" class="footer__image">
+      <img src="assets/images/youtube.svg" alt="" class="footer__image">
     </div>
   </div>
 
