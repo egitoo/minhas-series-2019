@@ -13,6 +13,13 @@
 .header{
   background-color: #c0392b;
   background-image: linear-gradient(#C0392B, #E74C3C);
+  flex-direction: column;
+  display: flex;
+}
+@media (min-width: 600px) {
+  .header{
+    flex-direction: column-reverse;
+  }
 }
 .header__title{
   color: white;
@@ -58,8 +65,14 @@
   
 
 /* Capa da série página principal */
+.series{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .serie{
   text-align: center;
+  margin: 0 auto;
 }
   .serie__title{
     font-family: 'Open Sans', sans-serif;
